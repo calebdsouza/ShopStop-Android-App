@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.b07.storeapplication.View.AdminViewSalesHistory">
+
+    <TextView
+        android:id="@+id/customer_sales_log_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Sales Log:"
+        android:padding="16dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sales_history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/darker_gray"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+    <TextView
+        android:id="@+id/inventory_sales_log_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inventory Sales Log:"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/inventory_sales_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="inventory info here"
+            android:padding="10dp"/>
+
+    </ScrollView>
+</LinearLayout>

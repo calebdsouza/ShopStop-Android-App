@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/instructions_wapper">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pick_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:font="@font/roboto_black"
+                android:fontStyle="normal"
+                android:fontWeight="500"
+                android:paddingTop="15dp"
+                android:text="Welcome To ShopStop!"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/initialize_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:font="@font/raleway_black"
+                android:fontStyle="normal"
+                android:fontWeight="400"
+                android:paddingTop="15dp"
+                android:text="To set up the ShopStop App you must create and Admin and Employee account"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/initialize_instructions_error_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:font="@font/raleway_black"
+                android:fontStyle="normal"
+                android:fontWeight="400"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/instructions_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

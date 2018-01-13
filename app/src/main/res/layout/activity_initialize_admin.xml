@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.b07.storeapplication.View.InitializeAdmin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/initialize_admin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step 1:"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/input_name_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/initialize_admin_title"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/input_age_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_name_admin"
+                android:hint="Enter Age"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/input_address_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_age_admin"
+                android:hint="Enter Address"
+                android:inputType="text"
+                android:padding="10dp"
+
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/input_password_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_address_admin"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                android:padding="10dp"
+
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/initialize_admin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_password_admin"
+                android:padding="@dimen/btn_padding"
+                android:layout_marginTop="30dp"
+                android:text="Initialize New Admin" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

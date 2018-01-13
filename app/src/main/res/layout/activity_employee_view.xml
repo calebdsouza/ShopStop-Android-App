@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.b07.storeapplication.View.EmployeeViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <NumberPicker
+                android:id="@+id/emp_action_type"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp" />
+
+            <LinearLayout
+                android:id="@+id/input_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emp_action_type"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/input_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter ID"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/input_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Quantity"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/input_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Age"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Address"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="EnterPassword"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/employee_action_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_section"
+                android:padding="@dimen/btn_padding"
+                android:text="Done" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            -<include layout="@layout/activity_sign_up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/auth_new_empl"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/values"
+                    android:onClick="authNewEmpl"
+                    android:text="Authenticate New Employee"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                     android:id="@+id/make_new_user"
+                     style="?android:textAppearanceSmall"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/values"
+                     android:onClick="makeNewUser"
+                     android:text="Make New User"
+                     android:textColor="#ffffff"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:id="@+id/make_new_account"
+                     style="?android:textAppearanceSmall"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/values"
+                     android:onClick="makeNewAccount"
+                     android:text="Make New Account"
+                     android:textColor="#ffffff"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:id="@+id/make_new_empl"
+                     style="?android:textAppearanceSmall"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="16dp"
+                     android:background="@drawable/values"
+                     android:onClick="makeNewEmpl"
+                     android:text="Make New Employee"
+                     android:textColor="#ffffff"
+                     android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/restock_invent"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/values"
+                    android:onClick="restockInventory"
+                    android:text="Restock Inventory"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/exit"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/values"
+                    android:padding="@dimen/btn_padding"
+                    android:text="Exit"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            -</LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>-->
+</RelativeLayout>

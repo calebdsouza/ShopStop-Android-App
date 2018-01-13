@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_view_items"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Shopping Cart" />
+        <item
+            android:id="@+id/menu_add_item"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Add Item" />
+        <item
+            android:id="@+id/menu_remove_item"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Remove Item" />
+        <item
+            android:id="@+id/menu_checkout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Checkout" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Logout" />
+    </group>
+</menu>
